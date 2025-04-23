@@ -30,7 +30,7 @@ Le projet comprend les fichiers suivants :
    Si vous utilisez `git`, clonez le projet à l'aide de la commande suivante :
    
    ```bash
-   git clone <url_du_dépôt>
+   git clone https://github.com/Elisassh/Wordle_elisabeth_Mickael.git
    ```
 
 2. **Placer le fichier `bdd_wordle.txt`** :
@@ -43,7 +43,7 @@ Le projet comprend les fichiers suivants :
 2. Utilisez la commande `gcc` pour compiler le programme :
    
    ```bash
-   gcc -o wordle wordle.c
+   gcc -o bin/script src/script.c
    ```
 
    Cette commande va compiler le fichier `wordle.c` et générer un exécutable nommé `wordle`.
@@ -53,25 +53,10 @@ Le projet comprend les fichiers suivants :
 Une fois la compilation terminée, vous pouvez exécuter le jeu en utilisant la commande suivante dans le terminal :
 
 ```bash
-./wordle
+./bin/script
 ```
 
 Le jeu va démarrer et vous serez invité à proposer un mot de 5 lettres à chaque essai. Vous aurez un maximum de 6 tentatives pour deviner le mot secret.
-
-### Exemple d'interaction avec le jeu :
-
-```
-🟩 Bien placé [ ]
-🟨 Mal placé ( )
-🔁 Mot de 5 lettres à deviner !
-
-Essai 1/6: apple
-[ a ]  [ p ]  ( p )  [ l ]  ( e )
-Essai 2/6: erect
-( e )  [ r ]  ( c )  [ t ]  [ e ]
-
-...
-```
 
 Si vous devinez le mot avant d'atteindre 6 tentatives, vous serez félicité ! Sinon, le mot à deviner sera révélé.
 
@@ -82,10 +67,4 @@ Si vous devinez le mot avant d'atteindre 6 tentatives, vous serez félicité ! S
 - Indication des lettres bien placées et mal placées après chaque essai.
 - Limitation à 6 tentatives.
 - Option pour recommencer le jeu après chaque partie.
-
-## Contributions
-
-Si vous souhaitez contribuer à ce projet, vous pouvez proposer des améliorations ou corrections. Forkez ce dépôt, effectuez vos modifications, puis soumettez une **pull request**.
-
----
 
